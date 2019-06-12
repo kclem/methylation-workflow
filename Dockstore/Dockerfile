@@ -24,4 +24,6 @@ RUN apt-get install -y apt-transport-https ca-certificates gnupg-agent software-
   && apt-get update \
   && apt-get install -y docker-ce docker-ce-cli containerd.io
 
+RUN export DOCKSTORE_ROOT=T
+
 #RUN dockerd &> /dev/null
